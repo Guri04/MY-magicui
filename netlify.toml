@@ -1,0 +1,8 @@
+[build]
+  base = "/"
+  publish = "build"
+  command = "pnpm run build"
+  node_version = "20.6.1"
+
+[build.environment]
+  NODE_ENV = "production"
