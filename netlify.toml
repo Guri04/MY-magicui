@@ -1,8 +1,5 @@
-[build]
-  base = "/"
-  publish = "build"
-  command = "pnpm run build"
-  node_version = "20.6.1"
-
-[build.environment]
-  NODE_ENV = "production"
+"engines": {
+  "node": ">=20.6.1",
+  "pnpm": "^7.5.1"
+},
+"packageManager": "pnpm@7.5.1"
