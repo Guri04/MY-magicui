@@ -2,8 +2,7 @@
 
 import React from "react";
 import { ForwardedRef, forwardRef } from 'react';
-import {
-  motion,
+import { motion,
   type AnimationProps,
   type HTMLMotionProps,
 } from "framer-motion";
