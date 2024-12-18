@@ -1,11 +1,7 @@
 "use client";
 
-import React from "react";
-import { ForwardedRef, forwardRef } from 'react';
-import { motion,
-  type AnimationProps,
-  type HTMLMotionProps,
-} from "framer-motion";
+import React, { forwardRef } from "react";
+import { motion, type AnimationProps, type HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const animationProps = {
@@ -38,7 +34,7 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
   ({ children, className, ...props }, ref) => {
     return (
       <motion.button
-        ref={ref as ForwardedRef<HTMLButtonElement>}
+        ref={ref}
         {...animationProps}
         {...props}
         className={cn(
@@ -70,4 +66,3 @@ const ShinyButton = forwardRef<HTMLButtonElement, ShinyButtonProps>(
 ShinyButton.displayName = "ShinyButton";
 
 export default ShinyButton;
-
